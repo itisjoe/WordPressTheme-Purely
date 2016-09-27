@@ -4,7 +4,7 @@
         <div class="content">
             <?php wp_nav_menu(array('theme_location'=>'footer'));?>
             <ul id="copyright">
-                <li>Theme: <a href="http://hsin.tw">Hsin</a></li>
+                <li>Theme: <a href="https://hsin.tw">Hsin</a></li>
                 <li>Images: <a href="https://unsplash.com">Unsplash</a></li>
             </ul>
         </div>
@@ -26,5 +26,6 @@ $(function(){
     });
 });
 </script>
+<?php wp_footer(); ?>
 </body>
 </html>

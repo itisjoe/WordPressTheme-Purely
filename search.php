@@ -1,7 +1,7 @@
 <?php get_header(); ?>
         <div class="content">
 <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
-            <div class="project">
+            <div id="post-<?php the_ID(); ?>" <?php post_class( 'project' ); ?>>
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                 <div class="description">
                     <div class="author"> by <?php the_author(); ?></div>
@@ -13,7 +13,7 @@
             </div>
 <?php endwhile; ?>
 <?php else: ?>
-    <?php _e('Not Found'); ?>
+    <?php _e('Not Found', 'purely'); ?>
 <?php endif; ?>
         </div>
 <?php if ( have_posts() ) { ?>

@@ -24,7 +24,7 @@
             </div>
 <?php endwhile; ?>
 <?php else: ?>
-<?php _e('Not Found');?>
+<?php _e('Not Found', 'purely');?>
 <?php endif; ?>
         </div>
         <div class="nav">
@@ -37,5 +37,8 @@
         </div>
         <div class="comments">
             <?php comments_template(); ?>
+        </div>
+        <div>
+            <?php paginate_comments_links(); ?>
         </div>
 <?php get_footer(); ?>

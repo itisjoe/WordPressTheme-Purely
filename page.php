@@ -12,7 +12,7 @@
             </div>
 <?php endwhile; ?>
 <?php else: ?>
-<?php _e('Not Found');?>
+<?php _e('Not Found', 'purely');?>
 <?php endif; ?>
         </div>
 <?php get_footer(); ?>

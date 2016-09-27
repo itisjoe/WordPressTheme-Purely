@@ -9,23 +9,23 @@
     <meta lang="zh-tw" name="keywords" content="<?php bloginfo('keywords');?>">
     <meta lang="zh-tw" name="description" content="<?php bloginfo('description');?>">
     <!--[if lt IE 9]>
-    <script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.min.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/js/respond.min.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5shiv.min.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style/css/normalize.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style/css/normalize.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header id="header">
         <div class="content">
-            <a href="<?php bloginfo('url');?>" class="site-title">
+            <a href="<?php echo esc_url( home_url() );?>" class="site-title">
                 <img id="avatar" src="<?php echo purely_get_logo(); ?>" alt="<?php bloginfo('name');?>">
             </a>
             <h1>
-                <strong><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></strong>
+                <strong><a href="<?php echo esc_url( home_url() );?>"><?php bloginfo('name');?></a></strong>
                 <?php bloginfo('description');?>
             </h1>
         </div>

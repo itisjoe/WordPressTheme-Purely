@@ -1,13 +1,14 @@
 /*
 Theme Name: Purely
-Theme URI: http://hsin.tw
+Theme URI: https://github.com/itisjoe/WordPressTheme-Purely
 Author: Hsin
-Author URI: http://blog.hsin.tw
+Author URI: https://hsin.tw
 Description: A Simple Theme
-Version: 1.0.0
+Version: 1.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 Tags: one-column, two-columns, right-sidebar, custom-logo, custom-header, custom-menu, flexible-header, blog
+Text Domain: purely
 
 */
 
@@ -303,4 +304,58 @@ a:active {
   #footer a:active {
     color: #666666;
   }
+}
+/* for wordpress theme required style */
+.wp-caption,
+.gallery-caption {
+  text-align: center;
+  background-color: #eeeeee;
+  margin: 5px;
+}
+.wp-caption-text {
+  text-align: center;
+  padding: 5px;
+}
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+.sticky,
+.bypostauthor {
+  margin: 5px;
+}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
 }
