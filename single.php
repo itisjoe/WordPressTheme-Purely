@@ -34,11 +34,9 @@
             <div class="prev">
                 <?php previous_post_link(); ?>&nbsp;
             </div>
+            
         </div>
         <div class="comments">
-            <?php comments_template(); ?>
-        </div>
-        <div>
-            <?php paginate_comments_links(); ?>
+            <?php  comments_template(); ?>
         </div>
 <?php get_footer(); ?>

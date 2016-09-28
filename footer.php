@@ -3,10 +3,6 @@
     <footer id="footer">
         <div class="content">
             <?php wp_nav_menu(array('theme_location'=>'footer'));?>
-            <ul id="copyright">
-                <li>Theme: <a href="https://hsin.tw">Hsin</a></li>
-                <li>Images: <a href="https://unsplash.com">Unsplash</a></li>
-            </ul>
         </div>
     </footer>
 <style>

@@ -5,7 +5,6 @@
     <meta http-equiv="content-language" content="zh-tw">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title><?php echo wp_get_document_title(); ?></title>
     <meta lang="zh-tw" name="keywords" content="<?php bloginfo('keywords');?>">
     <meta lang="zh-tw" name="description" content="<?php bloginfo('description');?>">
     <!--[if lt IE 9]>

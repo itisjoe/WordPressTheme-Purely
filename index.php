@@ -7,6 +7,9 @@
                     <div class="author"> by <?php the_author(); ?></div>
                     <?php the_time('Y/m/d'); ?>
                 </div>
+<?php if ( has_post_thumbnail() ) { ?>
+                <div class="thumb"><?php the_post_thumbnail(); ?></div>
+<?php } ?>
                 <div>
                 	<?php the_content(); ?>
                 </div>

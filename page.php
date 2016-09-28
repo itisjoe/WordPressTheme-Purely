@@ -15,4 +15,10 @@
 <?php _e('Not Found', 'purely');?>
 <?php endif; ?>
         </div>
+        <div class="nav">
+            <?php wp_link_pages(array('nextpagelink'=> __('Next', 'purely'),'previouspagelink' => __('Prev', 'purely'))); ?>
+        </div>
+        <div class="comments">
+            <?php  comments_template(); ?>
+        </div>
 <?php get_footer(); ?>

@@ -7,7 +7,7 @@ if ( ! isset( $content_width ) ) {
 // add sidebar
 add_action( 'widgets_init', 'purely_widgets_init' );
 
-// add header and logo image
+// add header and logo image and background
 add_action( 'after_setup_theme', 'purely_custom_setup' );
 
 // Menu
@@ -33,7 +33,7 @@ function purely_widgets_init() {
     }
 }
 
-// header and logo image
+// header and logo image and background
 function purely_custom_setup() {
     if (function_exists('add_theme_support')) {
     	add_theme_support( 'custom-header', array(
@@ -49,14 +49,38 @@ function purely_custom_setup() {
     	    'flex-width' => true,
     	    'flex-height' => true
     	));
+    	
+    	add_theme_support( 'custom-background', array(
+    	    'default-color' => 'ffffff'
+    	));
+    	
+    	add_theme_support( "post-thumbnails");
+    	
+    	add_theme_support( 'title-tag' );
     }
 }
+
+// custom style files when editor edit article
+function purely_add_editor_styles() {
+    add_editor_style();
+}
+
+// add custom style files when editor edit article
+add_action( 'init', 'purely_add_editor_styles' );
 
 // add feed links
 add_theme_support( 'automatic-feed-links' );
 
 // add title-tag support
 add_theme_support( "title-tag" );
+
+
+
+
+/*  
+    Theme functions
+*/
+
 
 // get logo image url in frontend 
 function purely_get_logo() {
